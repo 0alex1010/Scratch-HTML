@@ -70,11 +70,11 @@
 
     // Update the game state
     function update() {
-      // Handle player movement
-      if (keys.ArrowLeft && playerX > 0) playerX -= playerSpeed;
-      if (keys.ArrowRight && playerX < worldWidth - 1) playerX += playerSpeed;
-      if (keys.ArrowUp && playerY > 0) playerY -= playerSpeed;
-      if (keys.ArrowDown && playerY < worldHeight - 1) playerY += playerSpeed;
+      // Handle player movement (WASD)
+      if (keys.KeyA && playerX > 0) playerX -= playerSpeed;
+      if (keys.KeyD && playerX < worldWidth - 1) playerX += playerSpeed;
+      if (keys.KeyW && playerY > 0) playerY -= playerSpeed;
+      if (keys.KeyS && playerY < worldHeight - 1) playerY += playerSpeed;
     }
 
     // Key press handling
